@@ -1,0 +1,161 @@
+{
+	"pages": [
+
+		{
+			"path": "pages/index",
+			"style": {
+				"navigationBarTitleText": "若依移动端框架",
+				"navigationStyle": "custom",
+				// 下拉刷新
+				"enablePullDownRefresh": true,
+				//上拉加载
+				"onReachBottomDistance": 10
+			}
+		},
+
+		{
+			"path": "pages/login",
+			"style": {
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/register",
+			"style": {
+				"navigationBarTitleText": "注册"
+			}
+		}, {
+			"path": "pages/mine/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "pages/mine/avatar/index",
+			"style": {
+				"navigationBarTitleText": "修改头像"
+			}
+		}, {
+			"path": "pages/mine/info/index",
+			"style": {
+				"navigationBarTitleText": "个人信息"
+			}
+		}, {
+			"path": "pages/mine/info/edit",
+			"style": {
+				"navigationBarTitleText": "编辑资料"
+			}
+		}, {
+			"path": "pages/mine/pwd/index",
+			"style": {
+				"navigationBarTitleText": "修改密码"
+			}
+		}, {
+			"path": "pages/mine/setting/index",
+			"style": {
+				"navigationBarTitleText": "应用设置"
+			}
+		}, {
+			"path": "pages/mine/help/index",
+			"style": {
+				"navigationBarTitleText": "常见问题"
+			}
+		}, {
+			"path": "pages/mine/about/index",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		}, {
+			"path": "pages/common/webview/index",
+			"style": {
+				"navigationBarTitleText": "浏览网页"
+			}
+		}, {
+			"path": "pages/common/textview/index",
+			"style": {
+				"navigationBarTitleText": "浏览文本"
+			}
+		},
+		{
+			"path": "pages/sort/sort",
+			"style": {
+				"navigationBarTitleText": "",
+				"navigationStyle": "custom"
+
+			}
+		},
+		{
+			"path": "pages/shop/shop",
+			"style": {
+				"navigationBarTitleText": "美食团购",
+				// 下拉刷新
+				"enablePullDownRefresh": true,
+				//上拉加载
+				"onReachBottomDistance": 10
+			}
+		},
+		{
+			"path": "pages/shop/shopDetail/shopDetail",
+			"style": {
+				"navigationBarTitleText": "",
+				// 下拉刷新
+				"enablePullDownRefresh": true,
+				//上拉加载
+				"onReachBottomDistance": 10
+			}
+		},
+		{
+			"path": "pages/shop/tradeOrder/tradeOrder",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path" : "pages/mine/MyOrder/MyOrder",
+			"style" : 
+			{
+				"navigationBarTitleText" : ""
+			}
+		}
+
+
+	],
+	"tabBar": {
+		"color": "#000000",
+		"selectedColor": "#000000",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"list": [{
+				"pagePath": "pages/index",
+				"iconPath": "static/images/tabbar/home_.png",
+				"selectedIconPath": "static/images/tabbar/home.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/sort/sort",
+				"iconPath": "static/images/tabbar/sort_.png",
+				"selectedIconPath": "static/images/tabbar/sort.png",
+				"text": "分类"
+			},
+			{
+				"pagePath": "pages/mine/index",
+				"iconPath": "static/images/tabbar/mine_.png",
+				"selectedIconPath": "static/images/tabbar/mine.png",
+				"text": "我的"
+			}
+		]
+	},
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "RuoYi",
+		"navigationBarBackgroundColor": "#FFFFFF"
+
+	},
+	"easycom": {
+		// 注意一定要放在custom里，否则无效，https://ask.dcloud.net.cn/question/131175
+		"custom": {
+			"^u--(.*)": "uview-ui/components/u-$1/u-$1.vue",
+			"^up-(.*)": "uview-ui/components/u-$1/u-$1.vue",
+			"^u-([^-].*)": "uview-ui/components/u-$1/u-$1.vue"
+		}
+	}
+}
